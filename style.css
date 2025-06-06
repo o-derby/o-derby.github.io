@@ -1,17 +1,35 @@
 /* Setting up format of site */
+html, body {
+    height: 100%
+}
+
 body {
     font-family: "Times New Roman", Times, serif;
     margin: 0;
     padding: 0;
-    background-color: #f3edf8;
-    color: #252326;
+    background-color: #ebe8f3;
+    color: #160936;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
 
 header {
-    background-color: #372c50;
-    color: #d6d0e5;
-    padding: 2rem;
+    background: linear-gradient(to right, #250545, #20109a);
+    color: #ebe8f3;
+    padding: 1rem;
     text-align: center;
+    line-height: 0.5;
+    border-bottom: 1px solid #160936;
+}
+
+header p {
+    font-size: 0.85rem;
 }
 
 a {
@@ -25,7 +43,7 @@ a:hover {
 }
 
 footer {
-    background-color: #e6dbf0;
+    background: linear-gradient(to right, #cec5e0 0.1%, #dfdbf0 100%);
     color: #5b4f68;
     padding: 1rem;
     text-align: center;
