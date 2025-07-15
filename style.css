@@ -213,7 +213,9 @@ section {
 
 /* About Me Section */
 #about-me {
-  padding: 2rem 1rem;
+  padding-top: 2rem; /* This will be overridden by JS anyway */
+  padding-bottom: 2rem; /* Keep your desired spacing at bottom */
+  margin-top: 3rem;
   margin-bottom: 3rem;
   max-width: 1200px;
   margin-left: auto;
@@ -223,6 +225,7 @@ section {
 .about-container {
   display: flex;
   align-items: center;
+  padding-inline: 3rem;
   gap: 2rem;
   flex-wrap: wrap; /* wrap on small screens */
   text-align: left;

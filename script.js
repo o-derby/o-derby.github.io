@@ -4,6 +4,7 @@ const goHome = document.getElementById('go-home');
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav-links');
 
+// NAVBAR SHOW/HIDE ON SCROLL
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
@@ -13,7 +14,7 @@ window.addEventListener('scroll', () => {
     }
 
     if (currentScroll > lastScroll && currentScroll > 50) {
-        // Scrolling down and past 50px, hide navbar
+        // Scrolling down, hide navbar
         navbar.style.top = `-${navbar.offsetHeight + 10}px`;
     } else {
         // Scrolling up, show navbar
@@ -23,14 +24,32 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Scroll to top when clicking "Olivia's Portfolio"
+// SCROLL TO TOP WHEN CLICKING TITLE
 goHome.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
     navLinks.classList.remove('show'); // Close menu on click
 });
 
-// Toggle nav menu on small screens
+// TOGGLE NAV MENU ON MOBILE
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('show');
+});
+
+// DYNAMIC PADDING TO PREVENT NAVBAR OVERLAP
+window.addEventListener('DOMContentLoaded', () => {
+    const main = document.querySelector('main');
+    const about = document.getElementById('about-me');
+
+    if (navbar) {
+        const navbarHeight = navbar.offsetHeight;
+
+        if (main) {
+            main.style.paddingTop = `${navbarHeight + 20}px`; // buffer
+        }
+
+        if (about) {
+            about.style.paddingTop = `${navbarHeight + 20}px`;
+        }
+    }
 });
