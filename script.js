@@ -45,11 +45,21 @@ window.addEventListener('DOMContentLoaded', () => {
         const navbarHeight = navbar.offsetHeight;
 
         if (main) {
-            main.style.paddingTop = `${navbarHeight + 20}px`; // buffer
+            main.style.paddingTop = `${navbarHeight - 20}px`; // buffer
         }
 
         if (about) {
-            about.style.paddingTop = `${navbarHeight + 20}px`;
+            about.style.paddingTop = `${navbarHeight - 20}px`;
         }
+    }
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.getElementById('navbar');
+    const about = document.getElementById('about-me');
+
+    if (navbar && about) {
+        const navbarHeight = navbar.offsetHeight;
+        about.style.paddingTop = `${navbarHeight - 15}px`; // add buffer for navbar height
     }
 });

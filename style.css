@@ -1,6 +1,6 @@
 /* Base setup */
 html {
-    font-size: 18px; /* Bigger base text */
+    font-size: 18px;
 }
 
 html, body {
@@ -9,7 +9,7 @@ html, body {
     padding: 0;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     background-color: #f5f8fb;
-    color: #1c1e2c; /* dark navy for main text */
+    color: #1c1e2c;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -18,12 +18,18 @@ html, body {
 
 main {
     flex: 1;
-    padding: 2rem 1rem;
+    padding: 0 1rem 2rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Header/Navbar styling */
+/* Remove margin-top from first child inside main */
+main > section:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Navbar */
 #navbar {
     position: fixed;
     top: 0;
@@ -50,25 +56,25 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    margin-top: 0.5rem;      /* smaller top margin */
-    margin-bottom: 2rem;     /* slightly smaller bottom margin */
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 h3 {
     font-size: 1.5rem;
-    margin-top: 0.0rem;
+    margin-top: 0;
     margin-bottom: 0.5rem;
 }
 
 /* Blue underline for project card titles */
 .project-card h3 {
-    border-bottom: 2px solid #3061E3; /* blue underline */
+    border-bottom: 2px solid #3061E3;
     padding-bottom: 0.3rem;
     margin-bottom: 1rem;
-    display: inline-block; /* underline fits text width */
+    display: inline-block;
 }
 
-/* Menu toggle */
+/* Menu toggle (hamburger icon) */
 .menu-toggle {
     background: none;
     border: none;
@@ -93,8 +99,8 @@ h3 {
 }
 
 .nav-links a:hover {
-    color: #1c1e2c;          /* navy text on hover */
-    background-color: #DA2528; /* red highlight background on hover */
+    color: #1c1e2c;
+    background-color: #DA2528;
     border-radius: 4px;
 }
 
@@ -123,8 +129,8 @@ h3 {
 }
 
 #go-home:hover {
-    color: #1c1e2c;          /* navy text on hover */
-    background-color: #DA2528; /* red highlight background on hover */
+    color: #1c1e2c;
+    background-color: #DA2528;
     border-radius: 4px;
 }
 
@@ -142,6 +148,51 @@ footer {
 section {
     margin-bottom: 3rem;
     text-align: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+}
+
+/* Full-width background for Recents, Projects, Creative */
+
+#recents, #projects, #creative {
+    max-width: none;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+}
+
+/* Background colors for each section */
+
+#recents {
+    background-color: #1c1e2c; /* navy */
+    color: #f5f8fb;
+}
+
+#projects {
+    background-color: #f5f8fb; /* light gray/white */
+    color: #1c1e2c;
+}
+
+#creative {
+    background-color: #3061E3; /* blue */
+    color: #f5f8fb;
+}
+
+/* Inner containers for content alignment */
+
+#recents > .recent-grid,
+#projects > .project-grid,
+#creative > .creative-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 /* Project grid */
@@ -165,129 +216,102 @@ section {
 
 /* Project card */
 .project-card {
-    background-color: #1c1e2c; /* navy background */
-    color: #f5f8fb; /* grey text */
-    aspect-ratio: 5 / 3; /* keeps card wider than tall */
+    background-color: #1c1e2c;
+    color: #f5f8fb;
+    aspect-ratio: 5 / 3;
     padding: 1.5rem;
-    border: 1px solid #444; /* darker border for contrast */
-    border-left: 4px solid #DA2528; /* red accent */
+    border: 1px solid #444;
+    border-left: 4px solid #DA2528;
     border-radius: 8px;
     font-size: 1.1rem;
 }
 
-/* Recents section */
-#recents {
-    background-color: #1c1e2c; /* dark navy */
-    color: #f5f8fb;
-    padding: 2rem 1rem;
-    margin-bottom: 3rem;
-}
-
-/* Recents heading */
+/* Recent cards */
 #recents h2 {
-    color: #f5f8fb; /* white */
+    border-bottom: 3px solid #3061E3;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 3rem;
+    color: #f5f8fb;
     text-align: center;
 }
 
-/* Recent cards container */
 .recent-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
-    max-width: 1000px; /* max width */
-    margin: 0 auto;
-    margin-bottom: 3rem;
+    max-width: 1000px;
+    margin: 0 auto 3rem auto;
 }
 
-/* Recent cards */
 .recent-card {
-    background-color: #DA2528; /* red */
+    background-color: #DA2528;
     color: #f5f8fb;
-    aspect-ratio: 5 / 3; /* wider than tall */
+    aspect-ratio: 5 / 3;
     padding: 1.5rem;
-    border-radius: 8px; /* rounded corners */
+    border-radius: 8px;
     font-size: 1.1rem;
     border: none;
 }
 
 /* About Me Section */
 #about-me {
-  padding-top: 2rem; /* This will be overridden by JS anyway */
-  padding-bottom: 2rem; /* Keep your desired spacing at bottom */
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.about-container {
-  display: flex;
-  align-items: center;
-  padding-inline: 3rem;
-  gap: 2rem;
-  flex-wrap: wrap; /* wrap on small screens */
-  text-align: left;
-}
-
-.about-photo {
-  width: 500px; /* fixed width */
-  height: 500px;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
-}
-
-.about-text {
-  flex: 1;
-  font-size: 1.5rem;
-  color: #1c1e2c; /* navy text */
-  line-height: 1.4;
-}
-
-.name-highlight {
-  color: #DA2528; /* red accent */
-  font-weight: 700;
-}
-
-/* Card images */
-.card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* contain to keep entire image visible */
-    border-radius: 4px 4px 0 0; /* round top corners only */
-    margin-bottom: 0.1rem;
-}
-
-#recents h2 {
-    color: #f5f8fb; /* white */
+    padding-top: 0;
+    padding-bottom: 2rem;
+    margin-top: 0;
     margin-bottom: 3rem;
-    text-align: center;
-    border-bottom: 3px solid #3061E3; /* blue underline */
-    padding-bottom: 0.5rem; /* some space below text */
-    display: inline-block; /* so underline fits text width */
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Creative section */
-#creative {
-    background-color: #3061E3; /* blue background */
-    color: #1c1e2c; /* navy text */
-    padding: 2rem 1rem;
-    margin-bottom: 3rem;
+#about-me > *:first-child {
+  margin-top: 0;
+  padding-top: 0;
 }
 
+.about-container {
+    display: flex;
+    align-items: center;
+    padding-inline: 3rem;
+    padding-top: 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.about-photo {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.about-text {
+    flex: 1;
+    font-size: 1.5rem;
+    color: #1c1e2c;
+    line-height: 1.4;
+}
+
+.name-highlight {
+    color: #DA2528;
+    font-weight: 700;
+}
+
+/* Creative grid */
 #creative h2 {
-    color: #f5f8fb; /* white title text */
-    margin-bottom: 3rem;
-    text-align: center;
-    border-bottom: 3px solid #1c1e2c; /* red underline */
+    border-bottom: 3px solid #1c1e2c;
     padding-bottom: 0.5rem;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3rem;
+    color: #f5f8fb;
+    text-align: center;
 }
 
 .creative-grid {
@@ -299,8 +323,8 @@ section {
 }
 
 .creative-card {
-    background-color: #f5f8fb; /* white cards */
-    color: #1c1e2c; /* navy text inside cards */
+    background-color: #f5f8fb;
+    color: #1c1e2c;
     aspect-ratio: 5 / 3;
     padding: 1.5rem;
     border-radius: 8px;
@@ -310,12 +334,13 @@ section {
 
 .creative-card h3 {
     text-decoration: underline;
-    text-decoration-color: #DA2528; /* red underline for card titles */
+    text-decoration-color: #DA2528;
     text-underline-offset: 4px;
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
 
+/* Card images */
 .card-image {
     width: 100%;
     height: 100%;
@@ -324,22 +349,15 @@ section {
     margin-bottom: 0.1rem;
 }
 
+#projects h2,
 #contact h2 {
-    color: #f5f8fb; /* white title text */
-    background-color: #DA2528; /* red highlight behind text */
-    display: inline-block; /* shrink background to text width */
-    padding: 0.25rem 0.75rem; /* some padding around text */
-    border-radius: 4px; /* optional, for slightly rounded corners */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#projects h2 {
-    color: #f5f8fb; /* white title text */
-    background-color: #DA2528; /* red highlight */
+    color: #f5f8fb;
+    background-color: #DA2528;
     display: inline-block;
     padding: 0.25rem 0.75rem;
     border-radius: 4px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3rem;
+    text-align: center;
 }
