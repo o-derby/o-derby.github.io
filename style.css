@@ -48,8 +48,8 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    margin-top: 1rem;      /* added smaller top margin */
-    margin-bottom: 3rem;
+    margin-top: 0.5rem;      /* smaller top margin */
+    margin-bottom: 2rem;     /* slightly smaller bottom margin */
 }
 
 h3 {
@@ -138,7 +138,6 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
-    margin-top: 1rem;
 }
 
 @media (max-width: 1000px) {
@@ -155,10 +154,11 @@ section {
 
 /* Project card */
 .project-card {
-    background-color: #ffffff;
+    background-color: #1c1e2c; /* navy background */
+    color: #f0f0f0; /* grey text */
     padding: 5rem;
-    border: 1px solid #ccc;
-    border-left: 4px solid #DA2528;
+    border: 1px solid #444; /* maybe a darker border for contrast */
+    border-left: 4px solid #DA2528; /* keep your red accent */
     border-radius: 8px;
     font-size: 1.1rem;
     min-height: 50px;
@@ -186,6 +186,7 @@ section {
     gap: 1.5rem;
     max-width: 900px; /* or whatever width you want */
     margin: 0 auto;
+    margin-bottom: 3rem;
 }
 
 /* Recent cards */
@@ -193,7 +194,43 @@ section {
     background-color: #DA2528; /* red */
     color: white;
     padding: 1.5rem;
-    border-radius: 0;
+    border-radius: 8px; /* rounded corners */
     font-size: 1.1rem;
     border: none;
+}
+
+#about-me {
+  padding: 2rem 1rem;
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* so it wraps on small screens */
+  text-align: left;
+}
+
+.about-photo {
+  width: 500px; /* fixed width, adjust as needed */
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1.5rem;
+  color: #1c1e2c; /* navy text */
+  line-height: 1.4;
+}
+
+.name-highlight {
+  color: #DA2528; /* red accent */
+  font-weight: 700;
 }
