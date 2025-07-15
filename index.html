@@ -1,33 +1,48 @@
 <!DOCTYPE html>
-<!-- Setting up basic framework/content of my portfolio website-->
 <html lang="en">
-    <head charset="UTF-8">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <h1>Olivia's Portfolio</h1>
-            <p>Olivia's Project Portfolio</p>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="navbar">
+        <div class="nav-container">
+            <h1><a href="#" id="go-home">Olivia's Portfolio</a></h1>
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+            <nav class="nav-links" id="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-        <main>
-            <section>
-                <h2>Projects</h2>
-                <!-- Projects will go here in the future... the one below is simply a test/placeholder -->
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Project Name</h3>
+                <p>Type description here...</p>
+                <p>Put a link here with a</p>
+            </div>
+        </section>
 
-                <div class="project-card">
-                    <h3>Project Name</h3>
-                    <p>Type description here...</p>
-                    <p>Put a link here with a</p>
-                </div>
-            </section>
-        </main>
+        <section id="about">
+            <h2>About</h2>
+            <p>Write about yourself here!</p>
+        </section>
 
-        <footer>
-            <p>&copy; 2025 Olivia</p>
-        </footer>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Put your email or socials here!</p>
+        </section>
+    </main>
 
-        <script src="script.js"></script>
-    </body>
+    <footer>
+        <p>&copy; 2025 Olivia</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
