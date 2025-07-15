@@ -25,11 +25,13 @@ main {
 
 /* Header/Navbar styling */
 #navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     background: #3061E3;
-    color: white;
+    color: #f5f8fb;
     padding: 1.5rem;
     transition: top 0.3s;
 }
@@ -54,7 +56,16 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
+    margin-top: 0.0rem;
     margin-bottom: 0.5rem;
+}
+
+/* Blue underline for project card titles */
+.project-card h3 {
+    border-bottom: 2px solid #3061E3; /* blue underline */
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    display: inline-block; /* underline fits text width */
 }
 
 /* Menu toggle */
@@ -62,7 +73,7 @@ h3 {
     background: none;
     border: none;
     font-size: 2.5rem;
-    color: white;
+    color: #f5f8fb;
     cursor: pointer;
     display: none;
 }
@@ -76,14 +87,14 @@ h3 {
 .nav-links a {
     font-size: 1.25rem;
     padding: 0.75rem 1rem;
-    color: white;
+    color: #f5f8fb;
     text-decoration: none;
     transition: color 0.2s, background 0.2s;
 }
 
 .nav-links a:hover {
-    color: #DA2528;
-    background-color: rgba(218, 37, 40, 0.1);
+    color: #1c1e2c;          /* navy text on hover */
+    background-color: #DA2528; /* red highlight background on hover */
     border-radius: 4px;
 }
 
@@ -112,15 +123,15 @@ h3 {
 }
 
 #go-home:hover {
-    color: #DA2528;
-    text-decoration: underline;
-    text-underline-offset: 4px;
+    color: #1c1e2c;          /* navy text on hover */
+    background-color: #DA2528; /* red highlight background on hover */
+    border-radius: 4px;
 }
 
 /* Footer */
 footer {
-    background: #3061E3;
-    color: #f0f0f0;
+    background: #1c1e2c;
+    color: #f5f8fb;
     padding: 1.5rem;
     text-align: center;
     font-size: 1.1rem;
@@ -155,26 +166,26 @@ section {
 /* Project card */
 .project-card {
     background-color: #1c1e2c; /* navy background */
-    color: #f0f0f0; /* grey text */
-    padding: 5rem;
-    border: 1px solid #444; /* maybe a darker border for contrast */
-    border-left: 4px solid #DA2528; /* keep your red accent */
+    color: #f5f8fb; /* grey text */
+    aspect-ratio: 5 / 3; /* keeps card wider than tall */
+    padding: 1.5rem;
+    border: 1px solid #444; /* darker border for contrast */
+    border-left: 4px solid #DA2528; /* red accent */
     border-radius: 8px;
     font-size: 1.1rem;
-    min-height: 50px;
 }
 
 /* Recents section */
 #recents {
     background-color: #1c1e2c; /* dark navy */
-    color: white;
+    color: #f5f8fb;
     padding: 2rem 1rem;
     margin-bottom: 3rem;
 }
 
 /* Recents heading */
 #recents h2 {
-    color: #ffffff; /* white */
+    color: #f5f8fb; /* white */
     margin-bottom: 3rem;
     text-align: center;
 }
@@ -183,8 +194,8 @@ section {
 .recent-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    max-width: 900px; /* or whatever width you want */
+    gap: 3rem;
+    max-width: 1000px; /* max width */
     margin: 0 auto;
     margin-bottom: 3rem;
 }
@@ -192,13 +203,15 @@ section {
 /* Recent cards */
 .recent-card {
     background-color: #DA2528; /* red */
-    color: white;
+    color: #f5f8fb;
+    aspect-ratio: 5 / 3; /* wider than tall */
     padding: 1.5rem;
     border-radius: 8px; /* rounded corners */
     font-size: 1.1rem;
     border: none;
 }
 
+/* About Me Section */
 #about-me {
   padding: 2rem 1rem;
   margin-bottom: 3rem;
@@ -211,12 +224,12 @@ section {
   display: flex;
   align-items: center;
   gap: 2rem;
-  flex-wrap: wrap; /* so it wraps on small screens */
+  flex-wrap: wrap; /* wrap on small screens */
   text-align: left;
 }
 
 .about-photo {
-  width: 500px; /* fixed width, adjust as needed */
+  width: 500px; /* fixed width */
   height: 500px;
   object-fit: cover;
   border-radius: 8px;
@@ -233,4 +246,97 @@ section {
 .name-highlight {
   color: #DA2528; /* red accent */
   font-weight: 700;
+}
+
+/* Card images */
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* contain to keep entire image visible */
+    border-radius: 4px 4px 0 0; /* round top corners only */
+    margin-bottom: 0.1rem;
+}
+
+#recents h2 {
+    color: #f5f8fb; /* white */
+    margin-bottom: 3rem;
+    text-align: center;
+    border-bottom: 3px solid #3061E3; /* blue underline */
+    padding-bottom: 0.5rem; /* some space below text */
+    display: inline-block; /* so underline fits text width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Creative section */
+#creative {
+    background-color: #3061E3; /* blue background */
+    color: #1c1e2c; /* navy text */
+    padding: 2rem 1rem;
+    margin-bottom: 3rem;
+}
+
+#creative h2 {
+    color: #f5f8fb; /* white title text */
+    margin-bottom: 3rem;
+    text-align: center;
+    border-bottom: 3px solid #1c1e2c; /* red underline */
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.creative-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+}
+
+.creative-card {
+    background-color: #f5f8fb; /* white cards */
+    color: #1c1e2c; /* navy text inside cards */
+    aspect-ratio: 5 / 3;
+    padding: 1.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    border: none;
+}
+
+.creative-card h3 {
+    text-decoration: underline;
+    text-decoration-color: #DA2528; /* red underline for card titles */
+    text-underline-offset: 4px;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 0.1rem;
+}
+
+#contact h2 {
+    color: #f5f8fb; /* white title text */
+    background-color: #DA2528; /* red highlight behind text */
+    display: inline-block; /* shrink background to text width */
+    padding: 0.25rem 0.75rem; /* some padding around text */
+    border-radius: 4px; /* optional, for slightly rounded corners */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projects h2 {
+    color: #f5f8fb; /* white title text */
+    background-color: #DA2528; /* red highlight */
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
 }

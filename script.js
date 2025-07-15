@@ -4,7 +4,6 @@ const goHome = document.getElementById('go-home');
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav-links');
 
-// Hide navbar on scroll down, show on scroll up
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
@@ -13,11 +12,11 @@ window.addEventListener('scroll', () => {
         return;
     }
 
-    if (currentScroll > lastScroll) {
-        // Scrolling down
-        navbar.style.top = '-100px';
+    if (currentScroll > lastScroll && currentScroll > 50) {
+        // Scrolling down and past 50px, hide navbar
+        navbar.style.top = `-${navbar.offsetHeight + 10}px`;
     } else {
-        // Scrolling up
+        // Scrolling up, show navbar
         navbar.style.top = '0';
     }
 
