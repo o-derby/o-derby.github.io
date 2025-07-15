@@ -146,13 +146,6 @@ section {
 }
 
 #recents, #projects, #creative {
-    max-width: none;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
     padding: 2rem 0;
     margin-bottom: 3rem;
 }
@@ -202,6 +195,7 @@ section {
 @media (max-width: 768px) {
     .project-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
 
@@ -217,6 +211,13 @@ section {
     width: 100%;
     box-sizing: border-box;
     transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        aspect-ratio: auto;
+        padding: 1rem;
+    }
 }
 
 #recents h2 {
@@ -250,6 +251,7 @@ section {
 @media (max-width: 600px) {
     .recent-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
 
@@ -263,6 +265,13 @@ section {
     width: 100%;
     box-sizing: border-box;
     transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .recent-card {
+        aspect-ratio: auto;
+        padding: 1rem;
+    }
 }
 
 #about-me {
@@ -357,6 +366,7 @@ section {
 @media (max-width: 600px) {
     .creative-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
 
@@ -372,6 +382,13 @@ section {
     transition: all 0.3s ease-in-out;
 }
 
+@media (max-width: 768px) {
+    .creative-card {
+        aspect-ratio: auto;
+        padding: 1rem;
+    }
+}
+
 .creative-card h3 {
     text-decoration: underline;
     text-decoration-color: #DA2528;
@@ -382,10 +399,17 @@ section {
 
 .card-image {
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-height: 200px;
     object-fit: contain;
     border-radius: 4px 4px 0 0;
     margin-bottom: 0.1rem;
+}
+
+@media (min-width: 769px) {
+    .card-image {
+        height: 100%;
+    }
 }
 
 #projects h2,
