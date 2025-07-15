@@ -56,13 +56,3 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
-
-window.addEventListener('DOMContentLoaded', () => {
-    const navbar = document.getElementById('navbar');
-    const about = document.getElementById('about-me');
-
-    if (navbar && about) {
-        const navbarHeight = navbar.offsetHeight;
-        about.style.paddingTop = `${navbarHeight - 15}px`; // add buffer for navbar height
-    }
-});
