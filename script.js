@@ -3,38 +3,41 @@ const navbar = document.getElementById('navbar');
 const goHome = document.getElementById('go-home');
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav-links');
+const about = document.getElementById('about-me');
 
-// NAVBAR SHOW/HIDE ON SCROLL
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
-    if (currentScroll <= 0) {
-        navbar.style.top = '0';
+    // Safety check
+    if (!about || !navbar) return;
+
+    // Get the halfway point of the #about-me section
+    const aboutTop = about.offsetTop;
+    const aboutHeight = about.offsetHeight;
+    const triggerPoint = aboutTop + (aboutHeight / 2);
+
+    // Don't trigger navbar behavior until past halfway through About Me
+    if (currentScroll < triggerPoint) {
+        navbar.style.top = '0'; // Always show navbar before trigger point
         return;
     }
 
+    // Scroll down → hide navbar
     if (currentScroll > lastScroll && currentScroll > 50) {
-        // Scrolling down, hide navbar
         navbar.style.top = `-${navbar.offsetHeight + 10}px`;
     } else {
-        // Scrolling up, show navbar
+        // Scroll up → show navbar
         navbar.style.top = '0';
     }
 
     lastScroll = currentScroll;
 });
 
-// SCROLL TO TOP WHEN CLICKING TITLE
-goHome.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    navLinks.classList.remove('show'); // Close menu on click
-});
-
-// TOGGLE NAV MENU ON MOBILE
+// Mobile nav toggle
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('show');
 });
+
 
 // DYNAMIC PADDING TO PREVENT NAVBAR OVERLAP
 window.addEventListener('DOMContentLoaded', () => {
