@@ -511,7 +511,7 @@ html, body {
 }
 
 #navbar {
-    background: #6F8C6B;
+    background: #5f7262;
     color: #EDE9DF;
 }
 
@@ -553,7 +553,7 @@ footer {
 }
 
 #creative {
-    background-color: #6F8C6B;
+    background-color: #5f7262;
     color: #EDE9DF;
 }
 
@@ -561,16 +561,16 @@ footer {
     background-color: #162A2C;
     color: #EDE9DF;
     border: 1px solid #686867;
-    border-left: 4px solid #6F8C6B;
+    border-left: 4px solid #5f7262;
 }
 
 #recents h2 {
-    border-bottom: 3px solid #6F8C6B;
+    border-bottom: 3px solid #5f7262;
     color: #EDE9DF;
 }
 
 .recent-card {
-    background-color: #6F8C6B;
+    background-color: #5f7262;
     color: #EDE9DF;
 }
 
@@ -583,7 +583,7 @@ footer {
 }
 
 .name-highlight {
-    color: #6F8C6B;
+    color: #5f7262;
 }
 
 #creative h2 {
@@ -597,13 +597,13 @@ footer {
 }
 
 .creative-card h3 {
-    text-decoration-color: #6F8C6B;
+    text-decoration-color: #5f7262;
 }
 
 #projects h2,
 #contact h2 {
     color: #EDE9DF;
-    background-color: #6F8C6B;
+    background-color: #5f7262;
 }
 
 .see-more-btn {
@@ -615,12 +615,12 @@ footer {
 }
 
 .btn-link {
-    background-color: #6F8C6B;
+    background-color: #5f7262;
     color: #EDE9DF;
 }
 
 .btn-link:hover {
-    background-color: #5b7458;
+    background-color: #5f7262;
 }
 
 .creative-page {
@@ -633,11 +633,11 @@ footer {
 
 .creative-page #creative h2 {
     color: #162A2C;
-    border-bottom-color: #6F8C6B;
+    border-bottom-color: #5f7262;
 }
 
 .creative-page #creative .see-more-btn {
-    background-color: #6F8C6B;
+    background-color: #5f7262;
     color: #EDE9DF;
 }
 
@@ -660,5 +660,5 @@ footer {
 }
 
 .about-photo:hover {
-    border-color: #6F8C6B;
+    border-color: #5f7262;
 }
