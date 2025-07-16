@@ -496,3 +496,169 @@ section {
     transform: translateY(-15px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+.about-photo {
+    transition: border 0.3s ease-in-out;
+}
+
+.about-photo:hover {
+    border-color: #DA2528; /* or any color you want */
+}
+
+html, body {
+    background-color: #EDE9DF;
+    color: #162A2C;
+}
+
+#navbar {
+    background: #6F8C6B;
+    color: #EDE9DF;
+}
+
+.project-card h3 {
+    border-bottom: 2px solid #6F8C6B;
+}
+
+.menu-toggle {
+    color: #EDE9DF;
+}
+
+.nav-links a {
+    color: #EDE9DF;
+}
+
+.nav-links a:hover {
+    color: #162A2C;
+    background-color: #EDE9DF;
+}
+
+#go-home:hover {
+    color: #162A2C;
+    background-color: #EDE9DF;
+}
+
+footer {
+    background: #162A2C;
+    color: #EDE9DF;
+}
+
+#recents {
+    background-color: #162A2C;
+    color: #EDE9DF;
+}
+
+#projects {
+    background-color: #EDE9DF;
+    color: #162A2C;
+}
+
+#creative {
+    background-color: #6F8C6B;
+    color: #EDE9DF;
+}
+
+.project-card {
+    background-color: #162A2C;
+    color: #EDE9DF;
+    border: 1px solid #686867;
+    border-left: 4px solid #6F8C6B;
+}
+
+#recents h2 {
+    border-bottom: 3px solid #6F8C6B;
+    color: #EDE9DF;
+}
+
+.recent-card {
+    background-color: #6F8C6B;
+    color: #EDE9DF;
+}
+
+.about-photo {
+    border: 5px solid #162A2C;
+}
+
+.about-text {
+    color: #162A2C;
+}
+
+.name-highlight {
+    color: #6F8C6B;
+}
+
+#creative h2 {
+    border-bottom: 3px solid #162A2C;
+    color: #EDE9DF;
+}
+
+.creative-card {
+    background-color: #EDE9DF;
+    color: #162A2C;
+}
+
+.creative-card h3 {
+    text-decoration-color: #6F8C6B;
+}
+
+#projects h2,
+#contact h2 {
+    color: #EDE9DF;
+    background-color: #6F8C6B;
+}
+
+.see-more-btn {
+    color: #EDE9DF;
+}
+
+.see-more-btn:hover {
+    background-color: #162A2C;
+}
+
+.btn-link {
+    background-color: #6F8C6B;
+    color: #EDE9DF;
+}
+
+.btn-link:hover {
+    background-color: #5b7458;
+}
+
+.creative-page {
+    background-color: #EDE9DF;
+}
+
+.creative-page #creative {
+    background-color: #EDE9DF;
+}
+
+.creative-page #creative h2 {
+    color: #162A2C;
+    border-bottom-color: #6F8C6B;
+}
+
+.creative-page #creative .see-more-btn {
+    background-color: #6F8C6B;
+    color: #EDE9DF;
+}
+
+.creative-page #creative .see-more-btn:hover {
+    background-color: #162A2C;
+}
+
+.home-page #creative h2 {
+    color: #162A2C;
+    border-bottom-color: #162A2C;
+}
+
+.home-page #creative .see-more-btn {
+    background-color: #162A2C;
+    color: #EDE9DF;
+}
+
+.home-page #creative .see-more-btn:hover {
+    background-color: #2c4648;
+}
+
+.about-photo:hover {
+    border-color: #6F8C6B;
+}
