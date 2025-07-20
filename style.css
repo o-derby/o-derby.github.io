@@ -533,14 +533,14 @@ section {
   display: flex;
   flex-direction: column;  /* stack items vertically */
   align-items: center; /* align items left (or center if you want) */
-  padding-inline: 3rem;
+  padding-inline: 1rem;
   gap: 2rem;
   text-align: center;
 }
 
 .about-proj-photo {
     width: 100%;
-    max-width: 500px;
+    max-width: 1000px;
     height: auto;
     object-fit: cover;
     border-radius: 8px;
