@@ -48,11 +48,7 @@ window.addEventListener('DOMContentLoaded', () => {
         const navbarHeight = navbar.offsetHeight;
 
         if (main) {
-            main.style.paddingTop = `${navbarHeight - 30}px`; // buffer
-        }
-
-        if (about) {
-            about.style.paddingTop = `${navbarHeight - 30}px`;
+            main.style.paddingTop = `${navbarHeight + 20}px`; // buffer
         }
     }
 });
