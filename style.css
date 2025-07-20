@@ -8,8 +8,8 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    background-color: #f5f8fb;
-    color: #1c1e2c;
+    background-color: #EDE9DF;
+    color: #162A2C;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -34,8 +34,8 @@ main > section:first-child {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: #3061E3;
-    color: #f5f8fb;
+    background: #5f7262;
+    color: #EDE9DF;
     padding: 1.5rem;
     transition: top 0.3s ease-in-out;
 }
@@ -65,7 +65,7 @@ h3 {
 }
 
 .project-card h3 {
-    border-bottom: 2px solid #3061E3;
+    border-bottom: 2px solid #6F8C6B;
     padding-bottom: 0.3rem;
     margin-bottom: 1rem;
     display: inline-block;
@@ -75,7 +75,7 @@ h3 {
     background: none;
     border: none;
     font-size: 2.5rem;
-    color: #f5f8fb;
+    color: #EDE9DF;
     cursor: pointer;
     display: none;
 }
@@ -88,14 +88,14 @@ h3 {
 .nav-links a {
     font-size: 1.25rem;
     padding: 0.75rem 1rem;
-    color: #f5f8fb;
+    color: #EDE9DF;
     text-decoration: none;
     transition: color 0.2s, background 0.2s;
 }
 
 .nav-links a:hover {
-    color: #1c1e2c;
-    background-color: #DA2528;
+    color: #162A2C;
+    background-color: #EDE9DF;
     border-radius: 4px;
 }
 
@@ -122,14 +122,14 @@ h3 {
 }
 
 #go-home:hover {
-    color: #1c1e2c;
-    background-color: #DA2528;
+    color: #162A2C;
+    background-color: #EDE9DF;
     border-radius: 4px;
 }
 
 footer {
-    background: #1c1e2c;
-    color: #f5f8fb;
+    background: #162A2C;
+    color: #EDE9DF;
     padding: 1.5rem;
     text-align: center;
     font-size: 1.1rem;
@@ -149,18 +149,18 @@ section {
 }
 
 #recents {
-    background-color: #1c1e2c;
-    color: #f5f8fb;
+    background-color: #162A2C;
+    color: #EDE9DF;
 }
 
 #projects {
-    background-color: #f5f8fb;
-    color: #1c1e2c;
+    background-color: #EDE9DF;
+    color: #162A2C;
 }
 
 #creative {
-    background-color: #3061E3;
-    color: #f5f8fb;
+    background-color: #5f7262;
+    color: #EDE9DF;
 }
 
 #recents > .recent-grid,
@@ -192,11 +192,11 @@ section {
 }
 
 .project-card {
-    background-color: #1c1e2c;
-    color: #f5f8fb;
+    background-color: #162A2C;
+    color: #EDE9DF;
     padding: 1.5rem;
-    border: 1px solid #444;
-    border-left: 4px solid #DA2528;
+    border: 1px solid #686867;
+    border-left: 4px solid #5f7262;
     border-radius: 8px;
     font-size: 1.1rem;
     width: 100%;
@@ -213,13 +213,13 @@ section {
 }
 
 #recents h2 {
-    border-bottom: 3px solid #3061E3;
+    border-bottom: 3px solid #5f7262;
     padding-bottom: 0.5rem;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
-    color: #f5f8fb;
+    color: #EDE9DF;
     text-align: center;
 }
 
@@ -242,8 +242,8 @@ section {
 }
 
 .recent-card {
-    background-color: #DA2528;
-    color: #f5f8fb;
+    background-color: #5f7262;
+    color: #EDE9DF;
     padding: 1.5rem;
     border-radius: 8px;
     font-size: 1.1rem;
@@ -291,7 +291,7 @@ section {
     height: auto;
     object-fit: cover;
     border-radius: 8px;
-    border: 5px solid #1c1e2c;
+    border: 5px solid #162A2C;
     flex-shrink: 0;
     box-sizing: border-box;
 }
@@ -312,23 +312,23 @@ section {
 .about-text {
     flex: 1;
     font-size: 1.5rem;
-    color: #1c1e2c;
+    color: #162A2C;
     line-height: 1.4;
 }
 
 .name-highlight {
-    color: #DA2528;
+    color: #5f7262;
     font-weight: 700;
 }
 
 #creative h2 {
-    border-bottom: 3px solid #1c1e2c;
+    border-bottom: 3px solid #162A2C;
     padding-bottom: 0.5rem;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
-    color: #f5f8fb;
+    color: #EDE9DF;
     text-align: center;
 }
 
@@ -351,8 +351,8 @@ section {
 }
 
 .creative-card {
-    background-color: #f5f8fb;
-    color: #1c1e2c;
+    background-color: #EDE9DF;
+    color: #162A2C;
     padding: 1.5rem;
     border-radius: 8px;
     font-size: 1.1rem;
@@ -371,7 +371,7 @@ section {
 
 .creative-card h3 {
     text-decoration: underline;
-    text-decoration-color: #DA2528;
+    text-decoration-color: #5f7262;
     text-underline-offset: 4px;
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -388,8 +388,8 @@ section {
 
 #projects h2,
 #contact h2 {
-    color: #f5f8fb;
-    background-color: #DA2528;
+    color: #EDE9DF;
+    background-color: #5f7262;
     display: inline-block;
     padding: 0.25rem 0.75rem;
     border-radius: 4px;
@@ -408,7 +408,7 @@ section {
     display: inline-block;
     padding: 0.75rem;
     font-size: 1.25rem;
-    color: #f5f8fb;
+    color: #EDE9DF;
     border-radius: 6px;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -417,7 +417,7 @@ section {
 }
 
 .see-more-btn:hover {
-    background-color: #DA2528;
+    background-color: #162A2C;
 }
 
 /* New styles for contact buttons */
@@ -431,8 +431,8 @@ section {
     display: inline-block;
     padding: 0.75rem 2rem;
     font-size: 1.25rem;
-    background-color: #DA2528;
-    color: #f5f8fb;
+    background-color: #5f7262;
+    color: #EDE9DF;
     border-radius: 6px;
     text-decoration: none;
     margin: 0.25rem 0;
@@ -441,7 +441,7 @@ section {
 }
 
 .btn-link:hover {
-    background-color: #b02123;
+    background-color: #5f7262;
 }
 
 #contact p {
@@ -454,40 +454,40 @@ section {
 
 /* ---- Creative Page ---- */
 .creative-page {
-  background-color: #f5f8fb;
+  background-color: #EDE9DF;
 }
 
 .creative-page #creative {
-  background-color: #f5f8fb;
+  background-color: #EDE9DF;
 }
 
 .creative-page #creative h2 {
-  color: #1c1e2c;
-  border-bottom-color: #3061E3;
+  color: #162A2C;
+  border-bottom-color: #5f7262;
 }
 
 .creative-page #creative .see-more-btn {
-  background-color: #DA2528;
-  color: #f5f8fb;
+  background-color: #5f7262;
+  color: #EDE9DF;
 }
 
 .creative-page #creative .see-more-btn:hover {
-  background-color: #b02123;
+  background-color: #162A2C;
 }
 
 /* ---- Home Page ---- */
 .home-page #creative h2 {
-  color: #1c1e2c;
-  border-bottom-color: #1c1e2c;
+  color: #162A2C;
+  border-bottom-color: #162A2C;
 }
 
 .home-page #creative .see-more-btn {
-  background-color: #1c1e2c;
-  color: #f5f8fb;
+  background-color: #162A2C;
+  color: #EDE9DF;
 }
 
 .home-page #creative .see-more-btn:hover {
-  background-color: #444;
+  background-color: #2c4648;
 }
 
 .project-card:hover,
@@ -502,167 +502,13 @@ section {
 }
 
 .about-photo:hover {
-    border-color: #DA2528; /* or any color you want */
-}
-
-html, body {
-    background-color: #EDE9DF;
-    color: #162A2C;
-}
-
-#navbar {
-    background: #5f7262;
-    color: #EDE9DF;
-}
-
-.project-card h3 {
-    border-bottom: 2px solid #6F8C6B;
-}
-
-.menu-toggle {
-    color: #EDE9DF;
-}
-
-.nav-links a {
-    color: #EDE9DF;
-}
-
-.nav-links a:hover {
-    color: #162A2C;
-    background-color: #EDE9DF;
-}
-
-#go-home:hover {
-    color: #162A2C;
-    background-color: #EDE9DF;
-}
-
-footer {
-    background: #162A2C;
-    color: #EDE9DF;
-}
-
-#recents {
-    background-color: #162A2C;
-    color: #EDE9DF;
-}
-
-#projects {
-    background-color: #EDE9DF;
-    color: #162A2C;
-}
-
-#creative {
-    background-color: #5f7262;
-    color: #EDE9DF;
-}
-
-.project-card {
-    background-color: #162A2C;
-    color: #EDE9DF;
-    border: 1px solid #686867;
-    border-left: 4px solid #5f7262;
-}
-
-#recents h2 {
-    border-bottom: 3px solid #5f7262;
-    color: #EDE9DF;
-}
-
-.recent-card {
-    background-color: #5f7262;
-    color: #EDE9DF;
-}
-
-.about-photo {
-    border: 5px solid #162A2C;
-}
-
-.about-text {
-    color: #162A2C;
-}
-
-.name-highlight {
-    color: #5f7262;
-}
-
-#creative h2 {
-    border-bottom: 3px solid #162A2C;
-    color: #EDE9DF;
-}
-
-.creative-card {
-    background-color: #EDE9DF;
-    color: #162A2C;
-}
-
-.creative-card h3 {
-    text-decoration-color: #5f7262;
-}
-
-#projects h2,
-#contact h2 {
-    color: #EDE9DF;
-    background-color: #5f7262;
-}
-
-.see-more-btn {
-    color: #EDE9DF;
-}
-
-.see-more-btn:hover {
-    background-color: #162A2C;
-}
-
-.btn-link {
-    background-color: #5f7262;
-    color: #EDE9DF;
-}
-
-.btn-link:hover {
-    background-color: #5f7262;
-}
-
-.creative-page {
-    background-color: #EDE9DF;
-}
-
-.creative-page #creative {
-    background-color: #EDE9DF;
-}
-
-.creative-page #creative h2 {
-    color: #162A2C;
-    border-bottom-color: #5f7262;
-}
-
-.creative-page #creative .see-more-btn {
-    background-color: #5f7262;
-    color: #EDE9DF;
-}
-
-.creative-page #creative .see-more-btn:hover {
-    background-color: #162A2C;
-}
-
-.home-page #creative h2 {
-    color: #162A2C;
-    border-bottom-color: #162A2C;
-}
-
-.home-page #creative .see-more-btn {
-    background-color: #162A2C;
-    color: #EDE9DF;
-}
-
-.home-page #creative .see-more-btn:hover {
-    background-color: #2c4648;
-}
-
-.about-photo:hover {
     border-color: #5f7262;
 }
 
 #contact .contact-links a {
   color: #5f7262;
+}
+
+.project-card {
+  text-decoration: none; /* Removes underline for the whole card */
 }
