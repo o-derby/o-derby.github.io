@@ -52,3 +52,14 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+function toggleImage() {
+    var imageElement = document.getElementById('myPhoto');
+    if (imageElement.src.includes("images/your-photo.jpeg")) { // Checks if the current image source contains 'image1.jpg'
+        imageElement.src = "images/your-photo2.png";
+        imageElement.alt = "Olivia's photo 2";
+    } else {
+        imageElement.src = "images/your-photo.jpeg";
+        imageElement.alt = "Olivia's photo";
+    }
+}
