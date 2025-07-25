@@ -555,3 +555,13 @@ section {
     color: #162A2C;
     line-height: 1.4;
 }
+
+.about-proj-text a {
+  color: #5f7262; /* or whatever color you want */
+  text-decoration: none; /* optional: removes underline */
+}
+
+.about-proj-text a:hover {
+  color: #5f7262; /* optional: changes color on hover */
+  text-decoration: underline; /* optional: adds underline on hover */
+}
