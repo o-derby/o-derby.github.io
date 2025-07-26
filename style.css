@@ -561,6 +561,11 @@ section {
   text-decoration: none; /* optional: removes underline */
 }
 
+.recent-card {
+  text-decoration: none;
+  color: #EDE9DF; /* optional: keeps text the same color as normal text */
+}
+
 .about-proj-text a:hover {
   color: #5f7262; /* optional: changes color on hover */
   text-decoration: underline; /* optional: adds underline on hover */
