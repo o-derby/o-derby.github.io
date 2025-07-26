@@ -27,19 +27,22 @@
             <section id="about-proj">
             <div class="about-proj-container">
                 <p class="about-proj-text">
-                Summary
+                This was one of the biggest and most rewarding projects I completed in my data structures class, CS61B. The assignment was to build a 2D, tile-based game in Java where the world is randomly generated and fully interactive. We started with a basic tile rendering engine and were responsible for building everything else, including map generation, game state handling, input management, and file saving.
                 </p>
             </div>
             <div class="about-proj-container">
                 <video class="my-video" controls> <source src="/vid/test.mov" type="video/quicktime"> </video>
                 <p class="about-proj-text">
-                Save/Load/characters
+                In my version of the game, I built a world generator where players can enter a custom seed to create a new and unique map each time. You can also choose your character at the start of the game. I designed my own pixel art for each character, all based on Oski (because I love Berkeley's mascot as you can see across my portfolio) dressed in a few different outfits. You can save and load games at any point, which helped me learn how to serialize game state and handle file I/O in Java. This part of the project deepened my understanding of object-oriented design and how to keep systems modular and reusable.
                 </p>
             </div>
             <div class="about-proj-container">
                 <video class="my-video" controls> <source src="/vid/oski2.mov" type="video/quicktime"> </video>
                 <p class="about-proj-text">
-                Movement/vision
+                Once you're in the game world, you can move around using the WASD keys. Movement respects the map layout, so you can't walk through walls or obstacles. If you hover your mouse over an object, the name of the tile appears in the top-left corner of the screen. I learned how to sync user input with game state in real time, and how to create an interface that reacts to both keyboard and mouse without lag or conflict.
+                </p>
+                <p class="about-proj-text">
+                I also added a vision toggle feature, where pressing the 'T' key limits your field of view to a small circle around your character. This creates a more immersive gameplay mode and was a fun challenge to implement. It taught me how to filter visible tiles based on player position, adjust the rendering pipeline, and design constraints that change the way players explore the world.
                 </p>
             </div>
         </section>

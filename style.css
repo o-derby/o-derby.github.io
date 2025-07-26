@@ -572,6 +572,11 @@ section {
   text-decoration: underline; /* optional: adds underline on hover */
 }
 
+.creative-card {
+  color: #162A2C; /* optional: changes color on hover */
+  text-decoration: None; /* optional: adds underline on hover */
+}
+
 .my-video {
   width: 100%;     /* or a specific value like 400px */
   max-width: 800px;
