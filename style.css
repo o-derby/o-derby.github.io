@@ -570,3 +570,10 @@ section {
   color: #5f7262; /* optional: changes color on hover */
   text-decoration: underline; /* optional: adds underline on hover */
 }
+
+.my-video {
+  width: 100%;     /* or a specific value like 400px */
+  max-width: 800px;
+  height: auto;    /* keeps aspect ratio */
+  border-radius: 10px; /* just for style */
+}
