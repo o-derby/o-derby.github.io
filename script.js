@@ -1,29 +1,16 @@
 let lastScroll = 0;
 const navbar = document.getElementById('navbar');
-const goHome = document.getElementById('go-home');
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav-links');
-const about = document.getElementById('about-me');
 
+// Navbar hide/show on scroll
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
-    // Safety check
-    if (!about || !navbar) return;
-
-    // Get the halfway point of the #about-me section
-    const aboutTop = about.offsetTop;
-    const aboutHeight = about.offsetHeight;
-    const triggerPoint = aboutTop + (aboutHeight / 2);
-
-    // Don't trigger navbar behavior until past halfway through About Me
-    if (currentScroll < triggerPoint) {
-        navbar.style.top = '0'; // Always show navbar before trigger point
-        return;
-    }
+    if (!navbar) return;
 
     // Scroll down → hide navbar
-    if (currentScroll > lastScroll && currentScroll > 50) {
+    if (currentScroll > lastScroll && currentScroll > 200) {
         navbar.style.top = `-${navbar.offsetHeight + 10}px`;
     } else {
         // Scroll up → show navbar
@@ -34,32 +21,32 @@ window.addEventListener('scroll', () => {
 });
 
 // Mobile nav toggle
-menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-});
+if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+}
 
+// Close mobile nav when clicking a link
+if (navLinks) {
+    const links = navLinks.querySelectorAll('a');
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('show');
+        });
+    });
+}
 
-// DYNAMIC PADDING TO PREVENT NAVBAR OVERLAP
-window.addEventListener('DOMContentLoaded', () => {
-    const main = document.querySelector('main');
-    const about = document.getElementById('about-me');
-
-    if (navbar) {
-        const navbarHeight = navbar.offsetHeight;
-
-        if (main) {
-            main.style.paddingTop = `${navbarHeight + 20}px`; // buffer
-        }
-    }
-});
-
+// Toggle profile photo
 function toggleImage() {
-    var imageElement = document.getElementById('myPhoto');
-    if (imageElement.src.includes("images/your-photo.jpeg")) { // Checks if the current image source contains 'image1.jpg'
-        imageElement.src = "cover/c-me.png";
-        imageElement.alt = "Olivia's photo 2";
-    } else {
-        imageElement.src = "images/your-photo.jpeg";
-        imageElement.alt = "Olivia's photo";
+    const imageElement = document.getElementById('myPhoto');
+    if (imageElement) {
+        if (imageElement.src.includes("images/your-photo.jpeg")) {
+            imageElement.src = "cover/c-me.png";
+            imageElement.alt = "Olivia's photo 2";
+        } else {
+            imageElement.src = "images/your-photo.jpeg";
+            imageElement.alt = "Olivia's photo";
+        }
     }
 }

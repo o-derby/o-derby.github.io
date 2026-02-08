@@ -3,142 +3,258 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Olivia Derby - Portfolio</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header id="navbar">
         <div class="nav-container">
-            <h1><a href="#" id="go-home">Olivia's Portfolio</a></h1>
+            <h1><a href="#" id="go-home">Olivia Derby</a></h1>
             <button class="menu-toggle" id="menu-toggle">☰</button>
             <nav class="nav-links" id="nav-links">
-                <a href="#creative">Projects</a>
-                <a href="#projects">Creative</a>
-                <a href="#recents">Coming Soon</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#vibe-code">Vibe Code</a>
+                <a href="#creative">Creative</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
     <main>
-    </main>
-    
-    <section id="about-me">
-        <div class="about-container">
-            <img id="myPhoto" src="images/your-photo.jpeg" alt="Olivia's photo" class="about-photo" onclick="toggleImage()"/>
-            
-            <p class="about-text">
-            Hello, I’m <span class="name-highlight">Olivia</span>! I’m a double major in Data Science and History at UC Berkeley. I love exploring new hobbies and learning new things along the way. Take a look below to see some of my projects, consisting of a mix of both formal work and creative experiments.
-            </p>
-        </div>
-    </section>
-
-    <section id="creative">
-        <h2>Projects</h2>
-        <div class="creative-grid">
-            <a href="proj/internet-study.html" class="creative-card">
-                <img src="/cover/c-int.png" alt="Project preview" class="card-image" />
-                <h3>Internet Case-Study</h3>
-                <p>Analyzed word-usage trends relating to the Internet with pandas</p>
-            </a>
-            <a href="proj/caltsc.html" class="creative-card">
-                <img src="/cover/cal.jpeg" alt="Project preview" class="card-image" />
-                <h3>UC Berkeley TSC</h3>
-                <p>Manage and develop social media content and outreach to 7000+ students</p>
-            </a>
-            <a href="proj/axcel.html" class="creative-card">
-                <img src="/cover/c-axcel.png" alt="Project preview" class="card-image" />
-                <h3>Axcel Portals</h3>
-                <p>Volunteered to create website and help manage social media content</p>
-            </a>
-            <a href="proj/pandas-game.html" class="creative-card">
-                <img src="/cover/c-pandas.png" alt="Project preview" class="card-image" />
-                <h3>Pandas Game</h3>
-                <p>Designed an interactive quiz-style web app using streamlit</p>
-            </a>
-            <a href="proj/oski-game.html" class="creative-card">
-                <img src="/cover/c-oskig.png" alt="Project preview" class="card-image" />
-                <h3>Oski Game</h3>
-                <p>2D Java game with world generation, movement, and vision toggles</p>
-            </a>
-            <!-- <a href="proj/router-sim.html" class="creative-card">
-                <img src="/cover/c-empty.png" alt="Project preview" class="card-image" />
-                <h3>Router Simulator</h3>
-                <p>Wrote a distance-vector routing protocol in python</p>
-            </a> -->
-            <a href="../index.html#recents" class="creative-card">
-                <img src="/cover/c-empty.png" alt="Project preview" class="card-image" />
-                <h3>. . .</h3>
-                <p>More Coming Soon!</p>
-            </a>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2 style="background: none; color: #162A2C;">Creative Works</h2>
-        <div class="project-grid">
-            <a href="creative/oski-figure.html" class="project-card">
-                <img src="/cover/c-oskif.png" alt="Project preview" class="card-image" />
-                <h3>Oski Figure</h3>
-                <p>Planned, Modeled, 3D-Printed, and Painted Figurine</p>
-            </a>
-            <a href="creative/2d-model.html" class="project-card">
-                <img src="/cover/c-lmodel.png" alt="Project preview" class="card-image" />
-                <h3>2D Model</h3>
-                <p>Designed, Drew, and Rigged 2D-Model with Facetracking</p>
-            </a>
-            <a href="../index.html#recents" class="project-card">
-                <img src="/cover/c-empty.png" alt="Project preview" class="card-image" />
-                <h3>. . .</h3>
-                <p>More Coming Soon!</p>
-            </a>
-            <!-- <a href="creative/oski-miku.html" class="project-card">
-                <img src="/cover/c-empty.png" alt="Project preview" class="card-image" />
-                <h3>Oski-Miku Drawing</h3>
-                <p>Designed Oski-inspired outfit for the one and only Hatsune Miku</p>
-            </a> -->
-            <p></p>
-        </div>
-
-        <!-- <div class="see-more-container">
-            <a href="creative.html" class="see-more-btn">See More</a>
-        </div> -->
-    </section>
-
-    <section id="recents">
-        <h2>Coming Soon</h2>
-        <div class="recent-grid">
-            <a href="current/hsr_analytics.html" class="recent-card">
-                <img src="/cover/cc-hsr.PNG" alt="Project preview" class="card-image" />
-                <h3>HSR Marketing Study</h3>
-                <p>Analyzing marketing strategy compared to public attention for my favorite game</p>
-            </a>
-            <a href="current/rythym-game.html" class="recent-card">
-                <img src="/cover/cc-rythym.PNG" alt="Project preview" class="card-image" />
-                <h3>Rythym Game</h3>
-                <p>Working on timing-based rythym game web app</p>
-            </a>
-            <a href="current/labubu-trends.html" class="recent-card">
-                <img src="/cover/cc-labubu.PNG" alt="Project preview" class="card-image" />
-                <h3>Labubu Trend Study</h3>
-                <p>Predictive study on the trending Labubu collectible compared to previous trends</p>
-            </a>
-        </div>
-    </section>
-
-    <section id="contact">
-            <div class="contact-links">
-                <h2><a href="mailto:olivia.m.derby@gmail.com" style="color: #EDE9DF; text-decoration: none;">Contact Me!</a></h2>
-
-                <p>Email: <a href="mailto:olivia.m.derby@gmail.com">olivia.m.derby@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/olivia-derby-profile/">Check it out!</a></p>
-                <p>GitHub: <a href="https://github.com/o-derby">Click here!</a></p>
-                <p>Resume: <a href="Olivia_Derby_Resume.pdf" download="Olivia_Derby_Resume.pdf">Download</a></p>
+        <!-- Hero/About Section -->
+        <section id="about-me">
+            <div class="about-container">
+                <img id="myPhoto" src="images/your-photo.jpeg" alt="Olivia's photo" class="about-photo" onclick="toggleImage()"/>
+                
+                <div class="about-text-container">
+                    <h1 class="hero-name">Olivia Derby</h1>
+                    <p class="hero-subtitle">Data Science + History @ UC Berkeley</p>
+                    <p class="hero-description">
+                        Exploring marketing analytics, growth strategy, and product. I love building things, analyzing data, and learning new skills along the way.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="Olivia_Derby_Resume.pdf" class="btn-primary" download>Resume</a>
+                        <a href="https://www.linkedin.com/in/olivia-derby-profile/" class="btn-secondary" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
             </div>
-    </section>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-timeline">
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Growth & GTM Intern</h3>
+                        <span class="experience-period">Jan 2026 - Present</span>
+                    </div>
+                    <p class="experience-company">Osmo • San Francisco, CA</p>
+                    <ul class="experience-details">
+                        <li>Contributing to go-to-market strategy and beta testing for an AI motion graphics product by proposing marketing campaigns and feature enhancements aligned with user needs</li>
+                        <li>Conducting market research by building and maintaining a database of potential social media promoters for upcoming client launches</li>
+                        <li>Assisting in planning client-facing advertisements and supporting concept development and positioning</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Peer Advocate Lead (Communications Team)</h3>
+                        <span class="experience-period">Jul 2025 - Present</span>
+                    </div>
+                    <p class="experience-company">UC Berkeley Transfer Student Center • Berkeley, CA</p>
+                    <ul class="experience-details">
+                        <li>Manage digital content and communications for 7,000+ transfer students, coordinating messaging, deadlines, and visual assets across teams</li>
+                        <li>Analyze engagement metrics to adjust posting strategy and optimize reach during key university events</li>
+                        <li>Produce bi-weekly newsletters, social campaigns, and student-facing resources</li>
+                        <li>Launched an animated trivia campaign increasing student interaction and cultural engagement</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>E-Commerce Clerk</h3>
+                        <span class="experience-period">Jul 2022 - Jul 2024</span>
+                    </div>
+                    <p class="experience-company">Ralphs (Kroger Co.) • Anaheim Hills, CA</p>
+                    <ul class="experience-details">
+                        <li>Supported day-to-day e-commerce operations in a high-volume storefront, managing order fulfillment, substitutions, and pickup coordination</li>
+                        <li>Delivered consistent customer service across multiple departments, earning manager trust and repeat recognition</li>
+                        <li>Improved order turnaround by adjusting tasks during peak-hour bottlenecks</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                
+                <!-- <a href="proj/fitness-app.html" class="project-card">
+                    <img src="cover/c-empty.png" alt="Project preview" class="card-image" />
+                    <h3>Fitness Rehab App Startup</h3>
+                    <p>Leading go-to-market strategy for a mobile fitness app targeting users with injuries and disabilities. Conducting user research and competitive analysis to inform product development.</p>
+                    <div class="project-tags">
+                        <span class="tag">GTM Strategy</span>
+                        <span class="tag">User Research</span>
+                        <span class="tag">In Progress</span>
+                    </div>
+                </a> -->
+
+                <a href="proj/internet-study.html" class="project-card">
+                    <img src="cover/c-int.png" alt="Project preview" class="card-image" />
+                    <h3>Historical Web Case Study</h3>
+                    <p>Used n-gram frequency analysis and data visualization to evaluate shifts in internet word usage over time, exploring linguistic trends in early web culture.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">pandas</span>
+                        <span class="tag">Data Viz</span>
+                    </div>
+                </a>
+
+                <a href="proj/pandas-game.html" class="project-card">
+                    <img src="cover/c-pandas.png" alt="Project preview" class="card-image" />
+                    <h3>Pandas & Seaborn Review Game</h3>
+                    <p>Designed a Streamlit-based interactive review tool to help users study pandas and seaborn through progressively difficult questions, visualizations, and regression problems.</p>
+                    <div class="project-tags">
+                        <span class="tag">Streamlit</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Education</span>
+                    </div>
+                </a>
+
+                <a href="proj/caltsc.html" class="project-card">
+                    <img src="cover/cal.jpeg" alt="Project preview" class="card-image" />
+                    <h3>UC Berkeley TSC Content</h3>
+                    <p>Manage and develop social media content and outreach strategy for 7000+ transfer students, analyzing engagement metrics to optimize content performance.</p>
+                    <div class="project-tags">
+                        <span class="tag">Social Media</span>
+                        <span class="tag">Analytics</span>
+                        <span class="tag">Content Strategy</span>
+                    </div>
+                </a>
+
+                <a href="proj/axcel.html" class="project-card">
+                    <img src="cover/c-axcel.png" alt="Project preview" class="card-image" />
+                    <h3>Axcel Digital Marketing</h3>
+                    <p>Volunteered to create the company's website, digitize their logo, and manage social media platforms as part of their digital transformation strategy.</p>
+                    <div class="project-tags">
+                        <span class="tag">Web Dev</span>
+                        <span class="tag">Marketing</span>
+                        <span class="tag">Design</span>
+                    </div>
+                </a>
+
+                <a href="proj/oski-game.html" class="project-card">
+                    <img src="cover/c-oskig.png" alt="Project preview" class="card-image" />
+                    <h3>Oski 2D Game</h3>
+                    <p>Developed a 2D game with world generation, lighting logic, and interactive environments using Java and object-oriented design principles.</p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Game Dev</span>
+                        <span class="tag">OOP</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Vibe Code Section -->
+        <section id="vibe-code">
+            <h2>Vibe Code</h2>
+            <p class="section-subtitle">Quick experiments and mini-projects I'm building to learn new things</p>
+            <div class="vibe-grid">
+                
+                <!-- Example vibe code projects - you'll add more as you build them! -->
+                <a href="https://github.com/o-derby" class="vibe-card" target="_blank">
+                    <div class="vibe-header">
+                        <h3>🚀 Coming Soon</h3>
+                        <span class="vibe-date">Building 3/week</span>
+                    </div>
+                    <p>Building something new every few days - follow along on GitHub</p>
+                    <div class="vibe-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Data Viz</span>
+                    </div>
+                </a>
+
+                <!-- Template for future vibe projects - uncomment and fill in as you build! -->
+                <!--
+                <a href="https://github.com/o-derby/project-name" class="vibe-card" target="_blank">
+                    <div class="vibe-header">
+                        <h3>📊 Project Name</h3>
+                        <span class="vibe-date">Feb 10, 2026</span>
+                    </div>
+                    <p>Brief description of what you built</p>
+                    <div class="vibe-tech">
+                        <span class="tech-tag">Tool 1</span>
+                        <span class="tech-tag">Tool 2</span>
+                    </div>
+                </a>
+                -->
+
+            </div>
+        </section>
+
+        <!-- Creative/For Fun Section -->
+        <section id="creative">
+            <h2>Creative / For Fun</h2>
+            <p class="section-subtitle">Personal projects and creative experiments</p>
+            <div class="creative-grid">
+                
+                <a href="creative/oski-figure.html" class="creative-card">
+                    <img src="cover/c-oskif.png" alt="Project preview" class="card-image" />
+                    <h3>Oski Figure</h3>
+                    <p>Planned, modeled, 3D-printed, and painted figurine of UC Berkeley's mascot</p>
+                </a>
+
+                <a href="creative/2d-model.html" class="creative-card">
+                    <img src="cover/c-lmodel.png" alt="Project preview" class="card-image" />
+                    <h3>2D Model</h3>
+                    <p>Designed, drew, and rigged 2D-model with facetracking capabilities</p>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills & Tools</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Data & Analytics</h3>
+                    <p>Python, SQL, pandas, NumPy, Matplotlib, Seaborn, Jupyter</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Marketing & Tools</h3>
+                    <p>Google Analytics, Excel, Streamlit, Social Media Analytics, Content Strategy</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Development</h3>
+                    <p>HTML, CSS, JavaScript, Git, Java, Wix</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Let's Connect</h2>
+            <div class="contact-links">
+                <p>Email: <a href="mailto:olivia.m.derby@gmail.com">olivia.m.derby@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/olivia-derby-profile/" target="_blank">linkedin.com/in/olivia-derby-profile</a></p>
+                <p>GitHub: <a href="https://github.com/o-derby" target="_blank">github.com/o-derby</a></p>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
-        <p>© 2025 Olivia</p>
+        <p>© 2026 Olivia Derby</p>
     </footer>
 
     <script src="script.js"></script>
