@@ -331,6 +331,17 @@ section h2 {
     margin: 0 0 1rem 0;
 }
 
+.experience-company a {
+    color: #5f7262;
+    text-decoration: underline;
+    text-decoration-color: #5f7262;
+    transition: color 0.2s;
+}
+
+.experience-company a:hover {
+    color: #162A2C;
+}
+
 .experience-details {
     margin: 0;
     padding-left: 1.5rem;
