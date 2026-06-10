@@ -290,6 +290,7 @@ section h2 {
 }
 
 .experience-item {
+    display: block;
     background-color: #fff;
     padding: 2rem;
     margin-bottom: 2rem;
@@ -297,6 +298,9 @@ section h2 {
     border-left: 4px solid #5f7262;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 .experience-item:hover {
