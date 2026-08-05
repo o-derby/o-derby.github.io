@@ -144,6 +144,19 @@ section {
     padding: 2rem 1rem;
 }
 
+/* The navbar is position:fixed and ~106px tall, so it sits on top of page
+   content. index.html clears it via #about-me's padding-top; subpages had no
+   equivalent, so their <h2> rendered behind the header. */
+.creative-page main {
+    padding-top: 8rem;
+}
+
+/* Same reason: an anchor jump (index.html#experience) would otherwise land
+   with the target heading underneath the fixed navbar. */
+section[id] {
+    scroll-margin-top: 8rem;
+}
+
 section h2 {
     width: auto;
     margin-left: auto;
