@@ -23,30 +23,53 @@
 
     <main>
         <section id="creative">
-            <h2>Co-Founder — Kinetik</h2>
-            <h3 style="text-align:center; color:#5f7262; font-weight:500; margin-top:-1rem; margin-bottom:2rem;">Berkeley, CA · Jan 2026 – Present</h3>
+            <h2>Kinetik</h2>
+            <h3 style="text-align:center; color:#5f7262; font-weight:500; margin-top:-1rem; margin-bottom:2rem;">Co-Founder &amp; CPO · Berkeley, CA · Jan 2026 – Present</h3>
+
+            <div class="back-to-portfolio" style="margin-bottom: 1rem; text-align: center;">
+                <a href="https://kinetik-web.onrender.com" target="_blank" rel="noopener" class="see-more-btn">Try the live demo →</a>
+            </div>
+            <p style="text-align:center; color:#5f7262; font-size:0.9rem; margin-bottom:3rem;">Hosted on a free tier — the first load can take up to a minute while the server wakes up.</p>
 
             <section id="about-proj">
                 <div class="about-proj-container">
                     <p class="about-proj-text">
-                        Kinetik is an early-stage startup I co-founded in January 2026. We're using computer vision to track patient movement and progress in remote physical therapy — the part of recovery that currently happens unsupervised, where a patient is at home doing exercises with no way for anyone to know whether the form is right or whether they're actually improving.
+                        Kinetik started as a project for my SCET class at Berkeley, where the assignment was to find a problem worth building a startup around. It didn't stay a class project. We landed on remote physical therapy — specifically the part of recovery that happens unsupervised, where a patient is at home doing exercises with no way for anyone to know whether the form is right or whether they're actually improving.
                     </p>
                 </div>
 
                 <div class="about-proj-container">
                     <p class="about-proj-text">
-                        As a co-founder at this stage, the work doesn't split cleanly into a single function. I contribute across product, model development, and clinical and regulatory research. That last piece has been the most unexpected education — building anything that touches patient care means the technical problem and the compliance problem are the same problem, and you can't defer one until the other is solved.
+                        Before writing any code we ran over 50 interviews with patients, clinics, and lawyers. I went out to the Stone Clinic and lab to talk to people on both sides of the problem — clinicians and patients — because the two groups describe the same failure completely differently. Patients talk about not knowing if they're doing it right. Clinicians talk about having no visibility between appointments. Those are the same gap viewed from opposite ends, and hearing both is what shaped the product.
                     </p>
                 </div>
 
                 <div class="about-proj-container">
                     <p class="about-proj-text">
-                        It's been the most complete thing I've worked on: computer vision and machine learning on one side, real clinical constraints on the other, and the constant early-stage question of whether the thing you're building is the thing anyone actually needs.
+                        I also handled the legal and financial research — insurance policy structures and medical reimbursement — because in healthcare that isn't back-office detail, it's the thing that determines whether a product can exist at all. A feature nobody can bill for doesn't ship. At the end of the class we pitched to VCs and took second place.
+                    </p>
+                </div>
+
+                <div class="about-proj-container">
+                    <p class="about-proj-text">
+                        Since then I've been building the software. The application is a full-stack Next.js, Fastify, and PostgreSQL app deployed to production on Render and Neon, so there's a live, publicly accessible demo that needs zero local setup — anyone can open it and use it, which matters enormously when you're trying to get feedback from clinicians who are not going to clone a repo.
+                    </p>
+                </div>
+
+                <div class="about-proj-container">
+                    <p class="about-proj-text">
+                        The piece I'm proudest of is the real-time computer vision: using Google's MediaPipe Pose Landmarker to auto-count exercise reps straight from a webcam feed. It runs entirely client-side, which means it adds no server cost at all no matter how many patients use it. For an early-stage product with no revenue, an architecture decision that keeps marginal cost at zero is worth as much as the feature itself.
+                    </p>
+                </div>
+
+                <div class="about-proj-container">
+                    <p class="about-proj-text">
+                        Around that I designed and shipped an end-to-end workout-tracking pipeline — a Prisma and PostgreSQL schema, a Fastify REST API, and a React interface — capturing per-exercise duration and post-session patient-reported outcomes. All of it surfaces on a clinician dashboard with automated high-pain alerting, so a patient reporting unusual pain gets flagged rather than sitting in a table waiting to be noticed. I also redesigned the UI across both the patient and clinician portals for visual consistency and usability.
                     </p>
                 </div>
 
                 <div style="text-align: center; margin-top: 1rem;">
-                    <p style="color: #5f7262; font-weight: 600; font-size: 1rem;">Skills: Computer Vision · Machine Learning · Product Development · Clinical & Regulatory Research</p>
+                    <p style="color: #5f7262; font-weight: 600; font-size: 1rem;">Stack: Next.js · React · Fastify · PostgreSQL · Prisma · MediaPipe · Render · Neon</p>
                 </div>
             </section>
 
