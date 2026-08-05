@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Food Tracker — Olivia Derby</title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="creative-page">
+    <header id="navbar">
+        <div class="nav-container">
+            <h1><a href="../index.html" id="go-home">Olivia's Portfolio</a></h1>
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+            <nav class="nav-links" id="nav-links">
+                <a href="../index.html#experience">Experience</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#vibe-code">Vibe Code</a>
+                <a href="../index.html#creative">Creative</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="creative">
+            <h2>Food Tracker</h2>
+            <h3 style="text-align:center; color:#5f7262; font-weight:500; margin-top:-1rem; margin-bottom:2rem;">Perishable food tracking with AI expiry estimates · Jul 2026</h3>
+
+            <section id="about-proj">
+                <div class="about-proj-container">
+                    <p class="about-proj-text">
+                        I built this because I kept throwing food away. Not dramatically — just the ordinary thing where you buy spinach with good intentions, forget it exists, and find it three weeks later. The problem isn't that expiry dates are hard, it's that logging groceries by hand is enough friction that nobody does it twice.
+                    </p>
+                </div>
+
+                <div class="about-proj-container">
+                    <p class="about-proj-text">
+                        So the input had to be as close to zero effort as I could make it. You photograph a single item or an entire grocery haul and the app identifies what's in the picture and estimates an expiry date for each thing. If you'd rather type it, you can, but the photo path is the one designed to actually get used.
+                    </p>
+                </div>
+
+                <div class="about-proj-container">
+                    <p class="about-proj-text">
+                        Everything lands on a dashboard sorted by soonest-to-expire, which is the only ordering that matters for this problem — you don't want an inventory, you want to know what to cook tonight. A daily email digest surfaces anything expiring within 48 hours, so the app works even when you don't open it. That last part was the real design goal: a tracker you have to remember to check is just another thing to forget.
+                    </p>
+                </div>
+
+                <div style="text-align: center; margin-top: 1rem;">
+                    <p style="color: #5f7262; font-weight: 600; font-size: 1rem;">Stack: Next.js · TypeScript · Tailwind · Supabase · Gemini · Resend · Vercel</p>
+                </div>
+            </section>
+
+            <div class="back-to-portfolio" style="margin-top: 3rem; text-align: center;">
+                <a href="../index.html#vibe-code" class="see-more-btn">← Back to Portfolio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Olivia Derby</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

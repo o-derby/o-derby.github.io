@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2D Game Editor — Olivia Derby</title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="creative-page">
+    <header id="navbar">
+        <div class="nav-container">
+            <h1><a href="../index.html" id="go-home">Olivia's Portfolio</a></h1>
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+            <nav class="nav-links" id="nav-links">
+                <a href="../index.html#experience">Experience</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#vibe-code">Vibe Code</a>
+                <a href="../index.html#creative">Creative</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="creative">
+            <h2>2D Game Editor</h2>
+            <h3 style="text-align:center; color:#5f7262; font-weight:500; margin-top:-1rem; margin-bottom:2rem;">A desktop editor for tile-based 2D games · Aug 2026</h3>
+
+            <section id="about-proj">
+                <div class="about-proj-container">
+                    <p class="about-proj-text">
+                        This is a desktop tool for building tile-based 2D games — the walk-around, talk-to-NPCs, trigger-a-cutscene kind. I built it because I wanted RPG Maker's speed without its ceiling: the point where you want to do something the tool didn't anticipate and there's no way down to the layer underneath.
+                    </p>
+                </div>
+
+                <div class="about-proj-container">
+                    <p class="about-proj-text">
+                        The design constraint that everything else follows from is that every project is a folder of plain, readable JSON. Anything the editor can do you can also do in a text editor, and the reverse. That wasn't a convenience decision — it's what makes the AI panel possible without writing a bespoke integration layer for it.
+                    </p>
+                </div>
+
+                <div class="about-proj-container">
+                    <p class="about-proj-text">
+                        The editor covers tilemap painting with single tiles or dragged-out blocks, flood fill, a separate collision layer, NPC placement, and trigger zones. Movement is grid-based with smooth interpolation and a camera that follows the player and stops at map edges. Dialogue supports branching trees with typewriter reveal and choices gated behind story flags. Cutscenes are an ordered command list — move characters, pan the camera, fade, run dialogue, warp between maps. You can playtest the current project from inside the editor, unsaved changes included.
+                    </p>
+                </div>
+
+                <div class="about-proj-container">
+                    <p class="about-proj-text">
+                        It also has a built-in pixel art editor, because bouncing between a separate art tool and the engine to check whether a tileset lines up is miserable. Pencil, eraser, flood fill, line, rectangle, ellipse and eyedropper, with adjustable brush size and mirroring. Layers have opacity and the full set of blend modes. Source and export stay separate files — the layered document saves as a <code>.art</code> sidecar and the flattened PNG is what the engine loads, the same relationship a <code>.psd</code> has to the image you ship. Flattening on save would mean never being able to reopen your own work to change one thing.
+                    </p>
+                </div>
+
+                <div class="about-proj-container">
+                    <p class="about-proj-text">
+                        The AI panel takes a request in plain language, reads the relevant files, and proposes edits — either as reviewable diffs or written directly. The thing I care most about here is that the safety story is validation, not trust: every file the AI writes is parsed and checked against the schema before it's accepted, in both modes. A malformed map, a dialogue with a dangling reference, an id that disagrees with its filename — all rejected, with the errors handed back so it can retry. A rejected write changes nothing, which is what makes direct mode tolerable. The worst outcome is a wasted turn, not a broken project.
+                    </p>
+                </div>
+
+                <div style="text-align: center; margin-top: 1rem;">
+                    <p style="color: #5f7262; font-weight: 600; font-size: 1rem;">Stack: TypeScript · React · Rust · Tauri · Vite · Vitest</p>
+                </div>
+            </section>
+
+            <div class="back-to-portfolio" style="margin-top: 3rem; text-align: center;">
+                <a href="../index.html#vibe-code" class="see-more-btn">← Back to Portfolio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Olivia Derby</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

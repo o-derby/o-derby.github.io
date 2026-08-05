@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Research Workspace — Olivia Derby</title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="creative-page">
+    <header id="navbar">
+        <div class="nav-container">
+            <h1><a href="../index.html" id="go-home">Olivia's Portfolio</a></h1>
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+            <nav class="nav-links" id="nav-links">
+                <a href="../index.html#experience">Experience</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#vibe-code">Vibe Code</a>
+                <a href="../index.html#creative">Creative</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="creative">
+            <h2>Research Workspace</h2>
+            <h3 style="text-align:center; color:#5f7262; font-weight:500; margin-top:-1rem; margin-bottom:2rem;">A local-first research workspace · In progress, Aug 2026</h3>
+
+            <section id="about-proj">
+                <div class="about-proj-container">
+                    <p class="about-proj-text">
+                        This is a local-first macOS research workspace — the reference manager I want for my history thesis, built as something closer to Zotero with an AI layer than to a chat window that happens to read PDFs. It's in progress; what follows separates what works today from what's still ahead, because I think that distinction is the honest way to show unfinished work.
+                    </p>
+                </div>
+
+                <div class="about-proj-container">
+                    <p class="about-proj-text">
+                        The foundation milestone is working. Projects and imported PDFs are stored locally in SQLite behind a versioned migration with foreign keys, so the schema can move without me hand-editing a database. Multi-file PDF import copies sources into managed local storage and runs SHA-256 hashing to catch duplicates — which matters more than it sounds when the same paper reaches you three times under three filenames. There's a project-filtered and all-source library view, and a PDF.js reader with paging and zoom built into the app.
+                    </p>
+                </div>
+
+                <div class="about-proj-container">
+                    <p class="about-proj-text">
+                        Still ahead: text extraction and search, secure provider credential storage, the AI chat itself, citation validation, annotations, notes, and export. The architecture doc plans grounded question-answering with retrieval and citation validation rather than open-ended generation, which is the part I actually care about getting right. A research tool that produces a confident citation to something that doesn't exist is worse than no tool — for a history thesis, it's the one failure mode that would make the whole thing untrustworthy.
+                    </p>
+                </div>
+
+                <div class="about-proj-container">
+                    <p class="about-proj-text">
+                        Building it local-first was a deliberate call. Research notes and unpublished source material are exactly the kind of thing I don't want sitting on someone else's server by default, and it means the reader and library work with no network at all.
+                    </p>
+                </div>
+
+                <div style="text-align: center; margin-top: 1rem;">
+                    <p style="color: #5f7262; font-weight: 600; font-size: 1rem;">Stack: Tauri 2 · React · TypeScript · Rust · SQLite · PDF.js</p>
+                </div>
+            </section>
+
+            <div class="back-to-portfolio" style="margin-top: 3rem; text-align: center;">
+                <a href="../index.html#vibe-code" class="see-more-btn">← Back to Portfolio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Olivia Derby</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
