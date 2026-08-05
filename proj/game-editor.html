@@ -29,31 +29,31 @@
             <section id="about-proj">
                 <div class="about-proj-container">
                     <p class="about-proj-text">
-                        This is a desktop tool for building tile-based 2D games — the walk-around, talk-to-NPCs, trigger-a-cutscene kind. I built it because I wanted RPG Maker's speed without its ceiling: the point where you want to do something the tool didn't anticipate and there's no way down to the layer underneath.
+                        This is a desktop tool for building tile-based 2D games of the walk-around, talk-to-NPCs, trigger-a-cutscene kind. I built it because I wanted RPG Maker's speed without its ceiling: the point where you want to do something the tool didn't anticipate and there's no way down to the layer underneath.
                     </p>
                 </div>
 
                 <div class="about-proj-container">
                     <p class="about-proj-text">
-                        The design constraint that everything else follows from is that every project is a folder of plain, readable JSON. Anything the editor can do you can also do in a text editor, and the reverse. That wasn't a convenience decision — it's what makes the AI panel possible without writing a bespoke integration layer for it.
+                        The design constraint that everything else follows from is that every project is a folder of plain, readable JSON. Anything the editor can do you can also do in a text editor, and the reverse. That wasn't a convenience decision. It's what makes the AI panel possible without writing a bespoke integration layer for it.
                     </p>
                 </div>
 
                 <div class="about-proj-container">
                     <p class="about-proj-text">
-                        The editor covers tilemap painting with single tiles or dragged-out blocks, flood fill, a separate collision layer, NPC placement, and trigger zones. Movement is grid-based with smooth interpolation and a camera that follows the player and stops at map edges. Dialogue supports branching trees with typewriter reveal and choices gated behind story flags. Cutscenes are an ordered command list — move characters, pan the camera, fade, run dialogue, warp between maps. You can playtest the current project from inside the editor, unsaved changes included.
+                        The editor covers tilemap painting with single tiles or dragged-out blocks, flood fill, a separate collision layer, NPC placement, and trigger zones. Movement is grid-based with smooth interpolation and a camera that follows the player and stops at map edges. Dialogue supports branching trees with typewriter reveal and choices gated behind story flags. Cutscenes are an ordered command list: move characters, pan the camera, fade, run dialogue, warp between maps. You can playtest the current project from inside the editor, unsaved changes included.
                     </p>
                 </div>
 
                 <div class="about-proj-container">
                     <p class="about-proj-text">
-                        It also has a built-in pixel art editor, because bouncing between a separate art tool and the engine to check whether a tileset lines up is miserable. Pencil, eraser, flood fill, line, rectangle, ellipse and eyedropper, with adjustable brush size and mirroring. Layers have opacity and the full set of blend modes. Source and export stay separate files — the layered document saves as a <code>.art</code> sidecar and the flattened PNG is what the engine loads, the same relationship a <code>.psd</code> has to the image you ship. Flattening on save would mean never being able to reopen your own work to change one thing.
+                        It also has a built-in pixel art editor, because bouncing between a separate art tool and the engine to check whether a tileset lines up is miserable. Pencil, eraser, flood fill, line, rectangle, ellipse and eyedropper, with adjustable brush size and mirroring. Layers have opacity and the full set of blend modes. Source and export stay separate files. The layered document saves as a <code>.art</code> sidecar and the flattened PNG is what the engine loads, the same relationship a <code>.psd</code> has to the image you ship. Flattening on save would mean never being able to reopen your own work to change one thing.
                     </p>
                 </div>
 
                 <div class="about-proj-container">
                     <p class="about-proj-text">
-                        The AI panel takes a request in plain language, reads the relevant files, and proposes edits — either as reviewable diffs or written directly. The thing I care most about here is that the safety story is validation, not trust: every file the AI writes is parsed and checked against the schema before it's accepted, in both modes. A malformed map, a dialogue with a dangling reference, an id that disagrees with its filename — all rejected, with the errors handed back so it can retry. A rejected write changes nothing, which is what makes direct mode tolerable. The worst outcome is a wasted turn, not a broken project.
+                        The AI panel takes a request in plain language, reads the relevant files, and proposes edits, either as reviewable diffs or written directly. The thing I care most about here is that the safety story is validation, not trust: every file the AI writes is parsed and checked against the schema before it's accepted, in both modes. A malformed map, a dialogue with a dangling reference, or an id that disagrees with its filename is rejected outright, with the errors handed back so it can retry. A rejected write changes nothing, which is what makes direct mode tolerable. The worst outcome is a wasted turn, not a broken project.
                     </p>
                 </div>
 
